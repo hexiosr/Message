@@ -2,12 +2,12 @@
 $(function(){
     $.ajax({
         type: "POST",
-        url: "demo.json",
+        url: "message.json",
         dataType: "json",
         addBox(result){
         }
     });
-    $.get("demo.json",function(result){
+    $.get("message.json",function(result){
         //result数据添加到box容器中;
         addBox(result);
     });
