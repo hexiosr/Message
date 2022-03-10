@@ -1,12 +1,5 @@
 //页面加载   获取全部信息
 $(function(){
-    $.ajax({
-        type: "POST",
-        url: "message.json",
-        dataType: "json",
-        addBox(result){
-        }
-    });
     $.get("message.json",function(result){
         //result数据添加到box容器中;
         addBox(result);
